@@ -74,7 +74,6 @@
   animation-timeline: view();
   animation-range: entry 20% cover 50%;
 }
-
 @keyframes reveal {
   from {
     opacity: 0;
@@ -85,7 +84,6 @@
     translate: 0 0;
   }
 }
-
 @media screen and (max-width: 780px) {
   .contenedor-testimonio {
     width: 90%;
@@ -94,63 +92,43 @@
     margin: 10px auto 30px;
     flex-direction: column;
   }
-
   .contenedor-testimonio .imagen-testimonio {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
     border-radius: 15px;
   }
-
   .contenedor-texto-testimonio {
     padding: 10px;
   }
 }
-
 @media screen and (max-width: 600px) {
   .contenedor-testimonio {
     width: 100%;
   }
-
-  .contenedor-testimonio .imagen-testimonio {
+  .contenedor-testimonio {
     border-radius: 10px;
   }
 }
-
-.imagen-testimonio {
-  height: 100%;
-  width: auto;
-  border-radius: 20px; 
-  transition: transform .4s ease-in-out;
-}
-
-.imagen-testimonio:hover {
-  transform: scale(1.05);
-}
-
 .contenedor-texto-testimonio {
   text-align: center;
-  padding: 20px;
+  padding: 40px;
   font-family: Lato, sans-serif;
   line-height: 1.5rem;
   color: #fff;
 }
-
 .nombre-testimonio {
   font-size: 1.5rem;
   padding-bottom: 10px;
 }
-
 .años-testimonio {
   font-size: 1.3rem;
 }
-
 .cargo-testimonio {
   font-size: 1.3rem;
   margin: 15px;
   padding-bottom: 20px;
 }
-
 .texto-testimonio {
   font-size: 1.1rem;
   text-align: justify;
