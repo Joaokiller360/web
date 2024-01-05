@@ -1,4 +1,4 @@
-import '../../stylesheets/testimonio/testimonio.css';
+import './testimonio/testimonio.css';
 import { React } from "react";
 import {Tooltip, Image, Button} from "@nextui-org/react";
 

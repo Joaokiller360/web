@@ -65,13 +65,13 @@ export default function App() {
       </NavbarContent>
       <NavbarContent className='hidden sm:flex gap-10' justify='center'>
         <NavbarItem>
-          <Link href='/' className='text-primary-50'>
+          <Link key='home' href='/' className='text-default-100'>
             Inicio
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href='*' className='text-primary-50'>
-            Sobre Mi
+          <Link href='*' className='text-default-100'>
+            Sobre mi
           </Link>
         </NavbarItem>
         <Dropdown>
@@ -79,7 +79,7 @@ export default function App() {
             <DropdownTrigger>
               <Button
                 disableRipple
-                className='text-primary-50 p-0 bg-transparent data-[hover=true]:bg-transparent'
+                className='text-default-100 p-0 bg-transparent data-[hover=true]:bg-transparent'
                 endContent={icons.chevron}
                 radius='sm'
                 variant='light'
@@ -159,20 +159,14 @@ export default function App() {
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              color={
-                index === 2 ? 'primary' : index === menuItems.length - 1 ? 'danger' : 'foreground'
-              }
-              className='w-full'
-              href='#'
-              size='lg'
-            >
-              {item}
-            </Link>
-          </NavbarMenuItem>
-        ))}
+      <NavbarItem
+        justify='center'
+        background= 'default-100'
+      >
+          <Link key='home' href='/' className='text-default-0'>
+            Inicio
+          </Link>
+        </NavbarItem>
       </NavbarMenu>
     </Navbar>
     <BrowserRouter>

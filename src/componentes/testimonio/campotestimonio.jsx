@@ -1,5 +1,5 @@
 import { Testimonio } from './testimonio.jsx'; //Ruta al archivo testimonio.jsx
-import '../../stylesheets/testimonio/compotestimonio.css'; //Ruta al archivo compotestimonio.css
+import './testimonio/compotestimonio.css'; //Ruta al archivo compotestimonio.css
 import testimoniosData from '../../json/testimonio.json';  // Ruta al archivo testimonio.json
 import { React } from "react";
 

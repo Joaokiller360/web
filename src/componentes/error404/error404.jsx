@@ -1,4 +1,4 @@
-import '../../stylesheets/error404/error404.css';
+import './error404.css';
 
 export function Error404 () {
     return <div id='eror'>
