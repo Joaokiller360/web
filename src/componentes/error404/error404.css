@@ -1,15 +1,26 @@
+@media screen and (max-width: 600px) {
+    #eror p{
+        text-align: center;
+        font-size: 50px;
+    }
+    #eror p span {
+        display: flexbox;
+        text-align: center;
+        font-size: 50px;
+    }
+  }
 #eror {
-    margin-top: 90px;
     padding: 40px;
-    font-size: 95px;
+    font-size: 100px;
     font-family: 'Monoton', cursive;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 0 0 80px red, 0 0 30px FireBrick, 0 0 6px DarkRed;
     color: red;
+    z-index: 1;
 }
 #eror p {
-    margin: 5px;
+    margin: 10px;
 }
 #error:hover {
     text-shadow: 0 0 200px #fff, 0 0 80px #008000, 0 0 6px #0000ff;
@@ -18,6 +29,7 @@
     text-shadow: 0 0 100px red, 0 0 40px firebrick, 0 0 8px DarkRed;
 }
 #error {
+    text-align: center;
     color: #fff;
     text-shadow: 0 0 80px #fff, 0 0 30px #008000, 0 0 6px #0000ff;
 }
