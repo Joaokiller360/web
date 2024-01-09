@@ -3,6 +3,6 @@ import './inicio.css';
 
 export function Inicio () {
     return(
-        <h1 className='titulo'>Hello World</h1>
+        <h1 className='titulo'>Bienvenido Perro de Sangre 😜</h1>
     )
 }

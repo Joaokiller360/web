@@ -8,6 +8,7 @@
         "cargo": "Ing. De Sotfware - Full Stac",
         "imagen": "2",
         "empresa": "Jb Multiservices",
+        "cualidades": ["Item 1", "Item 2", "Item 3"],
         "testimonio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure natus necessitatibus minus cum, dolores, animi enim aliquid libero reiciendis nam, nulla odio esse impedit quae at perspiciatis ratione! Amet, quaerat?"
       },
       {
@@ -27,6 +28,36 @@
         "pais": "Estados Unidos",
         "cargo": "Ing. De Sotfware - React & Astro",
         "imagen": "3",
+        "empresa": "Jb Multiservices",
+        "testimonio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure natus necessitatibus minus cum, dolores, animi enim aliquid libero reiciendis nam, nulla odio esse impedit quae at perspiciatis ratione! Amet, quaerat?"
+      },
+      {
+        "id": 4,
+        "nombre": "Jostin Alfredo",
+        "años": "21",
+        "pais": "Panama",
+        "cargo": "Ing. De Sotfware - React & Vite",
+        "imagen": "1",
+        "empresa": "Jb Multiservices",
+        "testimonio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure natus necessitatibus minus cum, dolores, animi enim aliquid libero reiciendis nam, nulla odio esse impedit quae at perspiciatis ratione! Amet, quaerat?"
+      },
+      {
+        "id": 5,
+        "nombre": "Maria Jasmin",
+        "años": "21",
+        "pais": "Panama",
+        "cargo": "Ing. De Sotfware - React & Vite",
+        "imagen": "1",
+        "empresa": "Jb Multiservices",
+        "testimonio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure natus necessitatibus minus cum, dolores, animi enim aliquid libero reiciendis nam, nulla odio esse impedit quae at perspiciatis ratione! Amet, quaerat?"
+      },
+      {
+        "id": 6,
+        "nombre": "Leonardo Diaz",
+        "años": "21",
+        "pais": "Panama",
+        "cargo": "Ing. De Sotfware - React & Vite",
+        "imagen": "1",
         "empresa": "Jb Multiservices",
         "testimonio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure natus necessitatibus minus cum, dolores, animi enim aliquid libero reiciendis nam, nulla odio esse impedit quae at perspiciatis ratione! Amet, quaerat?"
       }
