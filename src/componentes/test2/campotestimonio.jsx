@@ -24,7 +24,7 @@ export function CampoTestimonio2() {
           minValue={0} 
           aria-label='Temperature'
           defaultValue={1}
-          className='w-1/4 md:w-1/4 text-default-100'
+          className='max-w-md md:w-1/8 text-default-100'
           color='foreground'
           showSteps={true}
           label='Testimonios'

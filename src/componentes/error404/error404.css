@@ -10,8 +10,8 @@
     }
   }
 #eror {
-    padding: 40px;
-    font-size: 100px;
+    padding: 2.5rem;
+    font-size: 6.25rem;
     font-family: 'Monoton', cursive;
     text-align: center;
     text-transform: uppercase;
@@ -20,7 +20,7 @@
     z-index: 1;
 }
 #eror p {
-    margin: 10px;
+    margin: 1.6rem;
 }
 #error:hover {
     text-shadow: 0 0 200px #fff, 0 0 80px #008000, 0 0 6px #0000ff;

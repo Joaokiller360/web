@@ -1,6 +1,6 @@
 import './testimonio/testimonio.css';
 import { React } from 'react';
-import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Image, Tooltip, Accordion, AccordionItem} from "@nextui-org/react";
+import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Image, Tooltip, Accordion, AccordionItem} from '@nextui-org/react';
 
 export function Testimonio2(props) {
   //Parte de exportacion de la imagen
@@ -50,11 +50,11 @@ export function Testimonio2(props) {
       </div>
     </div>
     <Modal
-      backdrop="blur"
+      backdrop='blur'
       isOpen={isOpen}
       onClose={onClose}
       classNames={{
-        backdrop: "bg-gradient-to-t"
+        backdrop: 'bg-gradient-to-t'
       }}
     >
       <ModalContent>
@@ -68,14 +68,14 @@ export function Testimonio2(props) {
               <p> 
                 Donde tengo un cargo de <b style={{textDecorationLine: 'underline'}}>{props.cargo}</b> con la empresa '<b>{props.empresa}</b>'
               </p>
-              <Accordion>
-                <AccordionItem key="1" aria-label="Descripcion de Mi" title="Descripcion de Mi">
+              <Accordion variant='splitted'>
+                <AccordionItem key='1' aria-label='Descripcion de Mi' title='Descripcion de Mi'>
                   '{props.testimonio}'
                 </AccordionItem>
-                <AccordionItem key="2" aria-label="Cualidades" title="Cualidades">
+                <AccordionItem key='2' aria-label='Cualidades' title='Cualidades'>
                   {props.cualidades}
                 </AccordionItem>
-                <AccordionItem key="3" aria-label="Empresas donde he trabajado" title="Empresas donde he trabajado">
+                <AccordionItem key='3' aria-label='Empresas donde he trabajado' title='Empresas donde he trabajado'>
                   '{props.testimonio}'
                 </AccordionItem>
               </Accordion>

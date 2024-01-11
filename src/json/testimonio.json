@@ -47,7 +47,7 @@
         "años": "21",
         "pais": "Panama",
         "cargo": "Ing. De Sotfware - React & Vite",
-        "imagen": "1",
+        "imagen": "2",
         "empresa": "Jb Multiservices",
         "testimonio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure natus necessitatibus minus cum, dolores, animi enim aliquid libero reiciendis nam, nulla odio esse impedit quae at perspiciatis ratione! Amet, quaerat?"
       },
@@ -58,6 +58,16 @@
         "pais": "Panama",
         "cargo": "Ing. De Sotfware - React & Vite",
         "imagen": "1",
+        "empresa": "Jb Multiservices",
+        "testimonio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure natus necessitatibus minus cum, dolores, animi enim aliquid libero reiciendis nam, nulla odio esse impedit quae at perspiciatis ratione! Amet, quaerat?"
+      },
+      {
+        "id": 6,
+        "nombre": "Leonardo Diaz",
+        "años": "21",
+        "pais": "Panama",
+        "cargo": "Ing. De Sotfware - React & Vite",
+        "imagen": "3",
         "empresa": "Jb Multiservices",
         "testimonio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure natus necessitatibus minus cum, dolores, animi enim aliquid libero reiciendis nam, nulla odio esse impedit quae at perspiciatis ratione! Amet, quaerat?"
       }

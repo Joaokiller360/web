@@ -1,4 +1,3 @@
-import './stylesheets/App.css';
 import { CampoTestimonio1 } from './componentes/test1/campotestimonio.jsx';
 import { CampoTestimonio2 } from './componentes/test2/campotestimonio.jsx';
 import { BrowserRouter, Routes, Route, Navigate } from  'react-router-dom';
@@ -13,19 +12,6 @@ import { Rating } from './componentes/pruebaSlider/pruebaSlider.jsx';
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = [
-    'Profile',
-    'Dashboard',
-    'Activity',
-    'Analytics',
-    'System',
-    'Deployments',
-    'My Settings',
-    'Team Settings',
-    'Help & Feedback',
-    'Log Out',
-  ];
-
   const icons = {
     chevron: <ChevronDown fill='currentColor' size={16} />,
     scale: <Scale className='text-warning' fill='currentColor' size={30} />,
@@ -37,7 +23,7 @@ export default function App() {
   };
   
 
-  return (
+  return (<>
     <header>
     <Navbar
       shouldHideOnScroll
@@ -91,7 +77,6 @@ export default function App() {
           </NavbarItem>
           <DropdownMenu
             aria-label='ACME Proyectos'
-            className='w-[340px]'
             itemClasses={{
               base: 'gap-4',
             }}
@@ -158,7 +143,7 @@ export default function App() {
           </DropdownMenu>
         </Dropdown>
         <NavbarItem>
-          <Link href='/contacto' className='text-success-500'>
+          <Link href='/#contacto' className='text-success-500'>
             Contacto
           </Link>
         </NavbarItem>
@@ -238,7 +223,6 @@ export default function App() {
           </Dropdown>
         </NavbarMenuItem>
       </NavbarMenu>
-      
     </Navbar>
     <BrowserRouter>
       <div>
@@ -248,10 +232,21 @@ export default function App() {
             <Route path='/testimonio2' element={<CampoTestimonio2 />} />
             <Route path='/pruebaslider' element={<Rating />} />
             <Route path='/cards' element={<Navigate to='/' />} />
+            <Route path='/contacto' element={<Navigate to='/#contacto' />} />
             <Route path='*' element={<Error404 />} />
         </Routes>
       </div>
       </BrowserRouter>
   </header>
+  <body>
+    <div class="flex flex-wrap -mx-3 my-5">
+            <div class="w-full max-w-full sm:w-3/4 mx-auto text-center">
+                <p class="text-sm text-white py-1">
+                    Pagina de practicas Css, Manejo de Backend, etc
+                </p>
+            </div>
+        </div>
+  </body>
+  </>
   );
 }
