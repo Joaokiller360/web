@@ -12,14 +12,13 @@
 #eror {
     padding: 2.5rem;
     font-size: 6.25rem;
-    font-family: 'Monoton', cursive;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 0 0 80px red, 0 0 30px FireBrick, 0 0 6px DarkRed;
     color: red;
     z-index: 1;
 }
 #eror p {
+    font-family: 'Monoton', cursive;
     margin: 1.6rem;
 }
 #error:hover {
@@ -29,6 +28,7 @@
     text-shadow: 0 0 100px red, 0 0 40px firebrick, 0 0 8px DarkRed;
 }
 #error {
+    text-shadow: 0 0 80px red, 0 0 30px FireBrick, 0 0 6px DarkRed;
     text-align: center;
     color: #fff;
     text-shadow: 0 0 80px #fff, 0 0 30px #008000, 0 0 6px #0000ff;

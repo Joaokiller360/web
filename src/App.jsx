@@ -143,7 +143,7 @@ export default function App() {
           </DropdownMenu>
         </Dropdown>
         <NavbarItem>
-          <Link href='/#contacto' className='text-success-500'>
+          <Link href='/contacto/#contacto' className='text-success-500'>
             Contacto
           </Link>
         </NavbarItem>

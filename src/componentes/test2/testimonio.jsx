@@ -73,10 +73,14 @@ export function Testimonio2(props) {
                   '{props.testimonio}'
                 </AccordionItem>
                 <AccordionItem key='2' aria-label='Cualidades' title='Cualidades'>
-                  {props.cualidades}
+                  {props.cualidades.map((cualidad, index) => (
+                    <li key={index}>{cualidad}</li>
+                  ))}
                 </AccordionItem>
                 <AccordionItem key='3' aria-label='Empresas donde he trabajado' title='Empresas donde he trabajado'>
-                  '{props.testimonio}'
+                  {props.empresasT.map((empresasT, index) => (
+                    <li key={index}>{empresasT}</li>
+                  ))}
                 </AccordionItem>
               </Accordion>
             </ModalBody>

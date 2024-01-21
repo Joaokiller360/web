@@ -44,6 +44,7 @@ export function CampoTestimonio2() {
             imagen={testimonio.imagen}
             empresa={testimonio.empresa}
             cualidades={testimonio.cualidades}
+            empresasT={testimonio.empresasT}
             testimonio={testimonio.testimonio}
           />
         ))}
