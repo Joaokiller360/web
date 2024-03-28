@@ -1,6 +1,6 @@
 import { Testimonio1 } from './testimonio.jsx'; //Ruta al archivo testimonio.jsx
 import './testimonio/compotestimonio1.css'; //Ruta al archivo compotestimonio.css
-import testimoniosData from '../../json/testimonio.json';  // Ruta al archivo testimonio.json
+import testimoniosData from '../../../../json/testimonio.json';  // Ruta al archivo testimonio.json
 import { React } from "react";
 
 export function CampoTestimonio1() {

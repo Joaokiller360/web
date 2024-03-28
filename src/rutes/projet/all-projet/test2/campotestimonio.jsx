@@ -1,6 +1,6 @@
 import { Testimonio2 } from './testimonio.jsx'; //Ruta al archivo testimonio.jsx
 import './testimonio/compotestimonio2.css'; //Ruta al archivo compotestimonio.css
-import testimoniosData from '../../json/testimonio.json';  // Ruta al archivo testimonio.json
+import testimoniosData from '../../../../json/testimonio.json';  // Ruta al archivo testimonio.json
 import { React } from 'react';
 import {Slider} from '@nextui-org/react';
 import { useState } from 'react';

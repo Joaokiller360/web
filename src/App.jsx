@@ -1,14 +1,12 @@
 import React from 'react'
 //Logo
 import {Logo} from './imgTest/Logo.jsx';
-
-//Next Ui
-import {ChevronDown, Lock, Activity, Flash, Server, TagUser, Scale} from './imgTest/Icons.jsx';
-import { Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Button, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu } from '@nextui-org/react';
+import {BarsIcons} from './imgTest/barsicons.jsx';
+import {REDES} from './imgTest/socialmedia.jsx'
 
 //Rutas
-import { CampoTestimonio1 } from './rutes/test1/campotestimonio.jsx';
-import { CampoTestimonio2 } from './rutes/test2/campotestimonio.jsx';
+import { CampoTestimonio1 } from './rutes/projet/all-projet/test1/campotestimonio.jsx';
+import { CampoTestimonio2 } from './rutes/projet/all-projet/test2/campotestimonio.jsx';
 import { Inicio } from './rutes/home/inicio.jsx';
 
 //Componente
@@ -21,15 +19,15 @@ import { BrowserRouter, Routes, Route, Navigate } from  'react-router-dom';
 //Importacion de menu tailwindUi
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
-import { ChevronDownIcon, PhoneIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon, PhoneIcon, XMarkIcon } from '@heroicons/react/20/solid'
 
 const proyectos = [
   { name: 'Testimonio 1', description: 'Get a better understanding of your traffic', href: '/testimonio1' },
   { name: 'Testimonio 2', description: 'Speak directly to your customers', href: '/testimonio2' },
 ]
 const callsToAction = [
+  { name: 'Redes Sociales', href: '#redes-sociales', icon: REDES },
   { name: 'Contact sales', href: '#', icon: PhoneIcon },
-  { name: 'Contactanos', href: '#', icon: PhoneIcon },
 ]
 
 function classNames(...classes) {
@@ -38,63 +36,15 @@ function classNames(...classes) {
 
 
 export default function App() {
-  /*const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const icons = {
-    chevron: <ChevronDown fill='currentColor' size={16} />,
-    scale: <Scale className='text-warning' fill='currentColor' size={30} />,
-    lock: <Lock className='text-success' fill='currentColor' size={30} />,
-    activity: <Activity className='text-secondary' fill='currentColor' size={30} />,
-    flash: <Flash className='text-primary' fill='currentColor' size={30} />,
-    server: <Server className='text-success' fill='currentColor' size={30} />,
-    user: <TagUser className='text-danger' fill='currentColor' size={30} />,
-  };*/
-
-  /*const router = createBrowserRouter([
-    {
-      path: '/',
-      element: <Inicio />,
-    },
-    {
-      path: path='/login',
-      element: <Login />,
-    },
-    {
-      path: path='/testimonio1',
-      element: <CampoTestimonio1 />,
-    },
-    {
-      path: path='/testimonio2',
-      element: <CampoTestimonio2 />,
-    },
-    {
-      path: path='*',
-      element: <Error404 />,
-    },
-    {
-      path: '/',
-      element: <ProtectedRoute />,
-      children: [
-        {
-          path: '/dashboard',
-          element: <Dashboard />,
-        },
-        {
-          path: '/profile',
-          element: <Profile />,
-        },
-      ],
-    },
-  ]);*/
-  
   //Menu TailwindUi
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (<>
-    <header className='bg-gray-800'>
+    <header className='bg-black'>
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">JB Multiservicios</span>
             <Logo className="h-8 w-auto"/>
           </a>
@@ -106,7 +56,7 @@ export default function App() {
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Abrir Menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+            <BarsIcons className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
@@ -138,7 +88,6 @@ export default function App() {
                       key={item.name}
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
-                      
                       <div className="flex-auto">
                         <a href={item.href} className="block font-semibold text-gray-900">
                           {item.name}
@@ -171,7 +120,7 @@ export default function App() {
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-gray-800 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">JB Multiservicios</span>
@@ -246,9 +195,7 @@ export default function App() {
     </BrowserRouter>
   </header>
 
-  <body className="bg-gray-800">
-    <Footer />
-  </body>
+  <Footer />
   </>
   );
 }
