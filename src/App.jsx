@@ -8,6 +8,7 @@ import {REDES} from './imgTest/socialmedia.jsx'
 import { CampoTestimonio1 } from './rutes/projet/all-projet/test1/campotestimonio.jsx';
 import { CampoTestimonio2 } from './rutes/projet/all-projet/test2/campotestimonio.jsx';
 import { Inicio } from './rutes/home/inicio.jsx';
+import { Proyectos } from './rutes/projet/projet.jsx';
 
 //Componente
 import { Error404 } from './componentes/error404/error404.jsx';
@@ -27,13 +28,12 @@ const proyectos = [
 ]
 const callsToAction = [
   { name: 'Redes Sociales', href: '#redes-sociales', icon: REDES },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
+  { name: 'Contact sales', href: '#contacto', icon: PhoneIcon },
 ]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
-
 
 export default function App() {
 
@@ -113,7 +113,7 @@ export default function App() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <a href="#contacto" className="text-sm font-semibold leading-6 text-white">
+          <a href="/#contacto" className="text-sm font-semibold leading-6 text-white">
             Contacto
           </a>
         </Popover.Group>
@@ -155,7 +155,7 @@ export default function App() {
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...proyectos, ...callsToAction].map((item) => (
+                        {[...proyectos].map((item) => (
                           <Disclosure.Button
                             key={item.name}
                             as="a"
@@ -188,14 +188,15 @@ export default function App() {
             <Route path='/sobre-mi' element={<Inicio /> }/>
             <Route path='/testimonio1' element={<CampoTestimonio1 />} />
             <Route path='/testimonio2' element={<CampoTestimonio2 />} />
-            <Route path='/contacto' element={<Navigate to='/#contacto' />} />
+            <Route path='#contacto' element={<Navigate to='/#contacto' />} />
+            <Route path='/proyectos' element={<Proyectos />} />
             <Route path='*' element={<Error404 />} />
         </Routes>
       </div>
     </BrowserRouter>
-  </header>
+    </header>
 
-  <Footer />
+    <Footer />
   </>
   );
 }

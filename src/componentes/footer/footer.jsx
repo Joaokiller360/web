@@ -6,11 +6,10 @@ const Indice = [
   { name: 'Inicio', key:'1', href: '/' },
   { name: 'Sobre Mi', key:'2', href: '/sobre-mi' },
   { name: 'Proyectos', key:'3', href: '/proyectos' },
-  { name: 'Contacto', key:'4', href: '/contacto#contacto' },
+  { name: 'Contacto', key:'4', href: '/#contacto' },
 ]
 const Recursos = [
   { name: 'GitHub', key:'1', href: 'https://github.com/Joaokiller360' },
-  { name:'Hoja de ruta', key:'2', href:'/#hoja-de-ruta' },
   { name: 'LinkeDin', key:'3', href: 'https://www.linkedin.com/?trk=seo-authwall-base_nav-header-logo' },
   { name: 'Preguntas Frecuentes', key:'4', href: '/#preguntas-frecuentes' },
 ]
@@ -31,7 +30,7 @@ export function Footer () {
               <div className='text-center font-medium'>
                 <h2 className='text-lg mb-5'>Indice</h2>
                   {Indice.map((item) => (
-                    <a href={item.href} key={item.key} className='block mb-2 hover:text-gray-400'>
+                    <a href={item.href} key={item.key} className='block mb-2 hover:text-gray-400 hover:underline'>
                       {item.name}
                     </a>
                   ))}
@@ -39,12 +38,12 @@ export function Footer () {
               <div className='text-center font-medium'>
                 <h2 className='text-lg mb-5'>Recursos</h2>
                   {Recursos.map((item) => (
-                    <a href={item.href} key={item.key} className='block mb-2 hover:text-gray-400'>
+                    <a href={item.href} key={item.key} className='block mb-2 hover:text-gray-400 hover:underline'>
                       {item.name}
                     </a>
                   ))}
               </div>
-              <div className='text-center md:text-left'>
+              <div id='redes-sociales' className='text-center md:text-left'>
                 <h2 className='text-lg font-medium mb-5'>Social Media</h2>
                   <p className='mb-4'>Sígueme en las redes sociales para obtener los últimos vídeos y publicaciones asombrosas.</p>
                   <div className='flex justify-center md:justify-start space-x-4'>
@@ -61,7 +60,7 @@ export function Footer () {
             <p className='lg mt-3 lg:mt-0'>© 2024 Todos los derechos reservados</p>
             <div className='lg'>
               {terminosycondiciones.map((item) => (
-                <a href={item.href} key={item.key} className='ml-4'>
+                <a href={item.href} key={item.key} className='ml-4 hover:underline'>
                   {item.name}
                 </a>
               ))}
