@@ -1,0 +1,92 @@
+{
+  "open_m": "Abrir Menú",
+  "close_m": "Cerrar Menú",
+
+  "navbar": {
+    "home": "Accueil",
+    "about-me": "À propos de moi",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+      
+  "home": {
+    "welcome": "Bienvenue dans mon portfolio numérique !",
+    "description": "Vous trouverez ici un échantillon de mon travail et de ma passion pour le développement web. Explorez et découvrez comment je peux ajouter de la valeur à votre projet.",
+    "button-p": "Projets",
+    "button-c": "Contact"
+  },
+
+  "language": "Langue",
+  "social": {
+    "social-networking": "Réseau social",
+    "description": "Suivez-moi sur les médias sociaux pour les dernières vidéos et les articles les plus intéressants."
+  },
+
+  "projects": "Mis Proyectos",
+
+  "project1": {
+    "name-testimony": "Témoignage Version 1",
+    "description-testimony": "Dans celui-ci, j'ai mis le système en pratique....",
+    "description-testimony-smoll": "En esta puse en practica el sistema de un Json con diferentes descripciones individuales. Donde se renderizan todos los Cards."
+  },
+  "project2": {
+    "name-testimony": "Témoignage Version 2",
+    "description-testimony": "Dans celui-ci, j'ai mis le système en pratique....",
+    "description-testimony-smoll": "Dans celui-ci, j'ai mis en pratique le système de cartes en l'améliorant et en réalisant un système de tableaux individuels. J'ai également créé un curseur qui permet d'afficher plus de cartes."
+  },
+
+  "see-more": "Voir plus",
+
+  "frequently-asked-questions": "Frequently Asked Questions",
+  "faq": {
+    "faq1": "¿Qué tipo de proyectos has realizado en el pasado?",
+    "faq1r": "Por el momento realize mi portafolio que es donde estas, unas practicas de crads usando JSON y por ahora estoy trabajando es un sistema de inventario notarial.",
+
+    "faq2": "¿¿Cómo abordas el diseño y la experiencia del usuario (UX/UI)?",
+    "faq2r": "Viendo repositorios y las tendencias que se puede lograr ver al visitar varias paginas web, tambien usando componentes ya estilizado he intentar ser lo más minimalista.",
+
+    "faq3": "¿Qué procesos sigues en el desarrollo de un proyecto web?",
+    "faq3r": "Lo principal es identificar el tipo de proyecto que se va a contruir y despues de realiza un plan de como desarrollarlo de la mejor forma y sencilla para en el futuro sea facil un mantenimiento.",
+
+    "faq4": "¿Cuál es tu experiencia en la integración de APIs de terceros?",
+    "faq4r": "Por el momento estoy estudiando la implementacion de APIs a mis proyectos, pero en el futuro sere unos de los mejores usando APIS.",
+
+    "faq5": "¿Has trabajado con algún CMS específico?",
+    "faq5r": "Si he trabajo con CMS al principio de mi carrera autodidacta, pero despues vi que si queria sacarle todo el poder a la web es mejor hacerlo a codigo puro y con mejores tecnologias.",
+
+    "faq6": "¿Cómo puedo contactarte para discutir un proyecto potencial?",
+    "faq6r": "Vous pouvez utiliser ce formulaire de contact où je vous contacterai personnellement pour plus d'informations."
+  },
+
+  "faqs": "formulaire de contact",
+
+  "contact-area": "Area de contacto",
+  "contact-meensage": "Me puedes dejar tu informacion para poder comunicarme con tigo 📧",
+  "contact-from": {
+    "name": "Nom complet",
+    "last-name": "Nom de famille complet",
+    "mail": "E-mail",
+    "phone": "Numéro de téléphone",
+    "message": "Message",
+    "message-area": "Ej: Vous pouvez écrire votre message ici",
+    "button": "Envoyer"
+  },
+
+  "index": "Indice",
+  "explore": "Explore",
+  "indexgrup": {
+    "home": "Accueil",
+    "about-me": "À propos de moi",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+
+  "footer": {
+    "reserved": "© 2024 Tous droits réservés",
+    "terms-and-conditions": "Conditions générales",
+    "privacy-policy": "Politique De Confidentialité"
+  },
+  
+  "about-message": "Ici, vous trouverez une histoire de comment je me suis intéressé au domaine du développement web.",
+  "coming-soon": "Prochainement"
+}

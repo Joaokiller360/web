@@ -1,0 +1,92 @@
+{
+  "open_m": "Abrir Menú",
+  "close_m": "Cerrar Menú",
+  "navbar": {
+    "home": "Home",
+    "about-me": "About Me",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "home": {
+    "welcome": "Welcome to my digital portfolio!",
+    "description": "Here you will find a sample of my work and passion for web development. Explore and discover how I can add value to your project.",
+    "button-p": "Projects",
+    "button-c": "Contact"
+  },
+
+  "projects": "My Projects",
+
+  "project1": {
+    "name-testimony": "Testimonial Version 1",
+    "description-testimony": "En esta puse en practica el sistema....",
+    "description-testimony-smoll": "In this one I put in practice the system of a Json with different individual descriptions. Where all Cards are rendered."
+  },
+  "project2": {
+    "name-testimony": "Testimonial Version 2",
+    "description-testimony": "En esta puse en practica el sistema....",
+    "description-testimony-smoll": "In this one I put in practice the system of Cards where it is improved and also a system of individual tables is realized. I also created a slider where you can show more Cards."
+  },
+
+  "see-more": "See More",
+
+  "frequently-asked-questions": "Frequently Asked Questions",
+  "faq": {
+    "faq1": "What type of projects have you worked on in the past?",
+    "faq1r": "So far, I have created my portfolio, which is where you are now, some practice CRUDs using JSON, and currently, I am working on a notarial inventory system.",
+
+    "faq2": "How do you approach design and user experience (UX/UI)?",
+    "faq2r": "By looking at repositories and trends that can be observed by visiting various websites. I also use pre-styled components and aim to be as minimalist as possible.",
+
+    "faq3": "What processes do you follow in the development of a web project?",
+    "faq3r": "The main thing is to identify the type of project to be built and then create a plan on how to develop it in the best and simplest way for future easy maintenance.",
+
+    "faq4": "What is your experience with integrating third-party APIs?",
+    "faq4r": "At the moment, I am studying the implementation of APIs into my projects, but in the future, I will be one of the best at using APIs.",
+
+    "faq5": "Have you worked with any specific CMS?",
+    "faq5r": "Yes, I have worked with CMS in the early stages of my self-taught career, but later on, I realized that if I wanted to harness the full power of the web, it's better to do it with pure code and better technologies.",
+
+    "faq6": "How can I contact you to discuss a potential project?",
+    "faq6r": "You can fill out this contact form, where I will personally get in touch with you for more information."
+
+  },
+
+  "faqs": "contact form",
+
+  "language": "Language",
+  "social": {
+    "social-networking": "Social Networking",
+    "description": "Follow me on social media for the latest videos and amazing posts."
+  },
+
+  "contact-area": "Contact Area",
+  "contact-meensage": "Can you leave me your information so I can contact you 📧",
+  "contact-from": {
+    "name": "Full Name",
+    "last-name": "Full Last Name",
+    "mail": "Email",
+    "phone": "Phone Number",
+    "message": "Message",
+    "message-area": "Ej: You can write your message here",
+    "button": "Send"
+  },
+
+  "index": "Index",
+  "explore": "Explore",
+  "indexgrup": {
+    "home": "Home",
+    "about-me": "About Me",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "footer": {
+    "reserved": "© 2024 All rights reserved",
+    "terms-and-conditions": "Terms And Conditions",
+    "privacy-policy": "Privacy Policy"
+  },
+
+  "about-message": "Here you will find a story of how I became interested in the web development field.",
+  "coming-soon": "Coming soon"
+}

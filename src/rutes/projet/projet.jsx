@@ -1,53 +1,37 @@
 import { React } from 'react';
 
-import { Icon1, Icon2, Icon3, Icon4, Icon5, Icon6 } from '../about/icons.jsx';
+import { Icon1, Icon2, Icon3, Icon4, Icon5 } from './icons.jsx';
 
-const cardsEs = [
-  { icon: 'icon1', href: '/testimonio1', title: 'Digital campaigns', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci distinctio alias voluptatum blanditiis laudantium.' },
-  { icon: 'icon2', href: '/testimonio2', title: 'Digital campaigns', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci distinctio alias voluptatum blanditiis laudantium.' },
-  { icon: 'icon3', href: '/testimonio3', title: 'Digital campaigns', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci distinctio alias voluptatum blanditiis laudantium.' },
-  { icon: 'icon4', href: '/testimonio4', title: 'Digital campaigns', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci distinctio alias voluptatum blanditiis laudantium.' },
-  { icon: 'icon5', href: '/testimonio5', title: 'Digital campaigns', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci distinctio alias voluptatum blanditiis laudantium.' },
-  { icon: 'icon6', href: '/testimonio6', title: 'Digital campaigns', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci distinctio alias voluptatum blanditiis laudantium.' },
-];
-const iconComponentsEs = {
-  icon1: Icon1,
-  icon2: Icon2,
-  icon3: Icon3,
-  icon4: Icon4,
-  icon5: Icon5,
-  icon6: Icon6,
-};
-//Version Mobil
-const cardsMo = [
-  { icon: 'icon1', href: '/testimonio1', title: 'Digital campaigns', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci distinctio alias voluptatum blanditiis laudantium.' },
-  { icon: 'icon2', href: '/testimonio2', title: 'Digital campaigns', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci distinctio alias voluptatum blanditiis laudantium.' },
-  { icon: 'icon3', href: '/testimonio3', title: 'Digital campaigns', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci distinctio alias voluptatum blanditiis laudantium.' },
-];
-const iconComponentsMo = {
-  icon1: Icon1,
-  icon2: Icon2,
-  icon3: Icon3,
-};
+import { useTranslation } from 'react-i18next';
 
 export function Proyectos () {
+
+  const [t] = useTranslation('global');
+
+  const cardsEs = [
+    { icon: 'icon1', href: '/testimonio1', title: t("project1.name-testimony"), description: t("project1.description-testimony-smoll") },
+    { icon: 'icon1', href: '/testimonio2', title: t("project2.name-testimony"), description: t("project2.description-testimony-smoll") },
+  ];
+  const iconComponentsEs = {
+    icon1: Icon1,
+    icon2: Icon2,
+  };
+  //Version Mobil
+  const cardsMo = [
+    { icon: 'icon1', href: '/testimonio1', title: t("project1.name-testimony"), description: t("project1.description-testimony-smoll") },
+    { icon: 'icon1', href: '/testimonio2', title: t("project2.name-testimony"), description: t("project2.description-testimony-smoll") },
+  ];
+  const iconComponentsMo = {
+    icon1: Icon1,
+    icon2: Icon2,
+  };
+
   return (
   <>
-    <section className='max-w-screen-xl px-4 py-8 mx-auto text-center'>
-      <div className='animate-fade-right'>
-        <h1 className='max-w mb-4 md:text-5xl text-4xl font-extrabold text-white'>Dale Click para volver al Inicio</h1>
-        <a href='/' className='group relative inline-flex items-center overflow-hidden px-8 py-3 mr-3 text-base font-medium text-center text-white'>
-          <span className='absolute -end-full transition-all group-hover:end-4'>
-            <svg className='size-5 rtl:rotate-180' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' >
-              <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M17 8l4 4m0 0l-4 4m4-4H3' />
-              </svg>
-            </span>
-          <span className='transition-all group-hover:me-4'>Inicio</span>
-        </a>
-      </div>
-      <div className='mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16'>
+    <section className='max-w-screen-xl mx-auto text-center text-white'>
+      <div className='mx-auto max-w-screen-xl px-4 py-8 pt-0 md:pt-14 sm:px-6 sm:py-12 lg:px-8 lg:py-16'>
         <div className='mx-auto max-w-lg text-center'>
-          <h3 className='text-3xl font-bold sm:text-4xl text-white'>Tecnologías que manejo <br />en Front End</h3>
+          <h3 className='text-3xl pb-6 font-bold sm:text-4xl text-white'>{t("projects")}</h3>
           {/*<p className='mt-4 text-gray-300'>Lorem ipsum, dolor sit amet consecte</p>*/}
         </div>
           {/*Version Escritorio*/}
@@ -59,19 +43,21 @@ export function Proyectos () {
   
               // Renderiza la tarjeta con el icono y los demás datos
               return (
-                <a key={index} className='block rounded-xl border border-white p-8 shadow-2xl transition hover:border-white-800/20 hover:shadow-blue-800/80'>
-                  <IconComponentEs /> {/* Utiliza el componente de icono correspondiente */}
-                  <h2 className='mt-4 text-xl font-bold text-white'>{card.title}</h2>
+                <span key={index} className='block rounded-xl border border-white p-8 shadow-2xl transition hover:border-white-800/20 hover:shadow-blue-800/80'>
+                  <div className="flex justify-center">
+                    <IconComponentEs /> {/* Utiliza el componente de icono correspondiente */}
+                  </div>
+                  <h2 className='mt-4 text-xl font-bold'>{card.title}</h2>
                   <p className='mt-1 text-sm text-gray-300'>{card.description}</p>
                   <a href={card.href} className='group relative inline-flex items-center overflow-hidden px-8 py-3 mr-3 text-base font-medium text-center text-white'>
                     <span className='absolute -end-full transition-all group-hover:end-4'>
-                      <svg className='size-5 rtl:rotate-180' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' >
-                        <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M17 8l4 4m0 0l-4 4m4-4H3' />
+                      <svg className='size-5' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+                        <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M7 16l-4-4m0 0l4-4m-4 4h18' />
                       </svg>
                     </span>
-                    <span className='transition-all group-hover:me-4'>Ver Más</span>
+                    <span className='transition-all group-hover:me-4'>{t("see-more")}</span>
                   </a>
-                </a>
+                </span>
               );
             })}
           </div>
@@ -85,14 +71,21 @@ export function Proyectos () {
   
               // Renderiza la tarjeta con el icono y los demás datos
               return (
-                <a key={index} className='block rounded-xl border border-white p-8 shadow-2xl transition hover:border-white-800/20 hover:shadow-blue-800/80'>
-                  <IconComponentMo /> {/* Utiliza el componente de icono correspondiente */}
-                  <h2 className='mt-4 text-xl font-bold text-white'>{card.title}</h2>
+                <span key={index} className='block rounded-xl border border-white p-8 shadow-2xl transition hover:border-white-800/20 hover:shadow-blue-800/80'>
+                  <div className="flex justify-center">
+                    <IconComponentMo /> {/* Utiliza el componente de icono correspondiente */}
+                  </div>
+                  <h2 className='mt-4 text-xl font-bold'>{card.title}</h2>
                   <p className='mt-1 text-sm text-gray-300'>{card.description}</p>
-                  <a href='#' className='inline-flex items-center justify-center px-5 py-2 my-5 text-base font-normal text-center text-white hover:text-white border border-gray-300 rounded-lg'>
-                    Contacto
-                  </a> 
-                </a>
+                  <a href={card.href} className='group relative inline-flex items-center overflow-hidden px-8 py-3 mr-3 text-base font-medium text-center text-white'>
+                    <span className='absolute -end-full transition-all group-hover:end-4'>
+                      <svg className='size-5' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+                        <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M7 16l-4-4m0 0l4-4m-4 4h18' />
+                      </svg>
+                    </span>
+                    <span className='transition-all group-hover:me-4'>{t("see-more")}</span>
+                  </a>
+                </span>
               );
             })}
           </div>

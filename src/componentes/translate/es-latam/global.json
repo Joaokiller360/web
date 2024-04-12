@@ -1,0 +1,91 @@
+{
+  "open_m": "Abrir Menú",
+  "close_m": "Cerrar Menú",
+  "navbar": {
+    "home": "Inicio",
+    "about-me": "Sobre Mi",
+    "projects": "Projectos",
+    "contact": "Contacto"
+  },
+    
+  "home": {
+    "welcome": "¡Bienvenido a mi portafolio digital!",
+    "description": "Aquí encontrarás una muestra de mi trabajo y pasión por el desarrollo web. Explore y descubra cómo puedo agregar valor a su proyecto.",
+    "button-p": "Proyectos",
+    "button-c": "Contacto"
+  },
+
+  "projects": "Mis Proyectos",
+
+  "project1": {
+    "name-testimony": "Testimonio Versión 1",
+    "description-testimony": "En esta puse en practica el sistema....",
+    "description-testimony-smoll": "En esta puse en practica el sistema de un Json con diferentes descripciones individuales. Donde se renderizan todos los Cards."
+  },
+  "project2": {
+    "name-testimony": "Testimonio Versión 2",
+    "description-testimony": "En esta puse en practica el sistema....",
+    "description-testimony-smoll": "En esta puse en practica el sistema de Cards donde se mejora y tambien se realiza un sistema de tablas individuales. Tambien se creo un slider donde se puede mostrar más Cards."
+  },
+
+  "see-more": "Ver Más",
+
+  "frequently-asked-questions": "Preguntas Frecuentes",
+  "faq": {
+    "faq1": "¿Qué tipo de proyectos has realizado en el pasado?",
+    "faq1r": "Por el momento realize mi portafolio que es donde estas, unas practicas de crads usando JSON y por ahora estoy trabajando es un sistema de inventario notarial.",
+
+    "faq2": "¿¿Cómo abordas el diseño y la experiencia del usuario (UX/UI)?",
+    "faq2r": "Viendo repositorios y las tendencias que se puede lograr ver al visitar varias paginas web, tambien usando componentes ya estilizado he intentar ser lo más minimalista.",
+
+    "faq3": "¿Qué procesos sigues en el desarrollo de un proyecto web?",
+    "faq3r": "Lo principal es identificar el tipo de proyecto que se va a contruir y despues de realiza un plan de como desarrollarlo de la mejor forma y sencilla para en el futuro sea facil un mantenimiento.",
+
+    "faq4": "¿Cuál es tu experiencia en la integración de APIs de terceros?",
+    "faq4r": "Por el momento estoy estudiando la implementacion de APIs a mis proyectos, pero en el futuro sere unos de los mejores usando APIS.",
+
+    "faq5": "¿Has trabajado con algún CMS específico?",
+    "faq5r": "Si he trabajo con CMS al principio de mi carrera autodidacta, pero despues vi que si queria sacarle todo el poder a la web es mejor hacerlo a codigo puro y con mejores tecnologias.",
+
+    "faq6": "¿Cómo puedo contactarte para discutir un proyecto potencial?",
+    "faq6r": "Pueden ingresar a este formulario de contacto donde yo personalmente me comunicare con ustedes para más informacion"
+  },
+
+  "faqs": "formulario de contacto",
+
+  "language": "Idioma",
+  "social": {
+    "social-networking": "Redes Sociales",
+    "description": "Sígueme en las redes sociales para obtener los últimos vídeos y publicaciones asombrosas."
+  },
+
+  "contact-area": "Area de contacto",
+  "contact-meensage": "Me puedes dejar tu informacion para poder comunicarme con tigo 📧",
+  "contact-from": {
+    "name": "Nombres Completos",
+    "last-name": "Apellidos Completos",
+    "mail": "Correo Electronico",
+    "phone": "Teléfono",
+    "message": "Mensaje",
+    "message-area": "Ej: Aqui puedes escribir tu mensaje",
+    "button": "Enviar"
+  },
+
+  "index": "Indice",
+  "explore": "Explorar",
+  "indexgrup": {
+    "home": "Inicio",
+    "about-me": "Sobre Mi",
+    "projects": "Projectos",
+    "contact": "Contacto"
+  },
+
+  "footer": {
+    "reserved": "© 2024 Todos los derechos reservados",
+    "terms-and-conditions": "Términos Y Condiciones",
+    "privacy-policy": "Politicas De Privacidad"
+  },
+
+  "about-message": "Aquí podras encontrarás una historia de como me interese en el segmento del desarrollo Web.",
+  "coming-soon": "Proximamente"
+}
