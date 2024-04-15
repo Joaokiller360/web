@@ -3,12 +3,7 @@ import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDis
 
 export function Testimonio2(props) {
   //Parte de exportacion de la imagen
-  const imagen = `/src/imgTest/testi-${props.imagen}.svg`;
-  //Parte de dar una alerta con nombre, años y pais
-  /*const onClick1 = () => {
-    alert(`Hola, soy ${props.nombre} tengo ${props.años} y vengo de ${props.pais}`);
-  };*/
-
+  const imagen = `/src/rutes/projet/testImg/testi-${props.imagen}.svg`;
 
   const {isOpen, onOpen, onClose} = useDisclosure();
 
