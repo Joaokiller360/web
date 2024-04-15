@@ -1,9 +1,10 @@
 import { React } from 'react';
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Image, Tooltip, Accordion, AccordionItem} from '@nextui-org/react';
 
+
 export function Testimonio2(props) {
   //Parte de exportacion de la imagen
-  const imagen = `./src/rutes/projet/testImg/testi-${props.imagen}.svg`;
+  const imagen = `/imgTest/testImg/testi-${props.imagen}.svg`;
 
   const {isOpen, onOpen, onClose} = useDisclosure();
 

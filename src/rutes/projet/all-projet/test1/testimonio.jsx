@@ -2,7 +2,9 @@ import { React } from 'react';
 import {Tooltip, Image, Button} from '@nextui-org/react';
 
 export function Testimonio1(props) {
-  const imagen = `./src/rutes/projet/testImg/testi-${props.imagen}.svg`;
+  
+  const imagen = `/imgTest/testImg/testi-${props.imagen}.svg`;
+  
   const onClick1 = () => {
     alert(`Hola, soy ${props.nombre} tengo ${props.años} y vengo de ${props.pais}`);
   };
