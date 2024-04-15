@@ -1,8 +1,17 @@
-# Creacion de Portafolio personal y CV
+# Hola, Me llamo Joao ! 👋
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 ¡Bienvenido a mi portafolio digital!
+Aquí encontrarás una muestra de mi trabajo y pasión por el desarrollo web. Explore y descubra cómo puedo agregar valor a su proyecto.
 
-Currently, two official plugins are available:
+## Tecnologias Implementadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Client:** React, React-dom, Nextui-org, TailwindCSS, Tailwindcss-animated, Emailjs, I18next
+
+## Autor
+
+- [@Joaokiller360](https://www.github.com/Joaokiller360)
+
+## 🔗 Redes Sociales
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Joaokiller360)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/joao-alexander-barres-diaz)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/J_o_a_o_B)
