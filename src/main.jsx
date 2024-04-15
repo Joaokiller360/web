@@ -12,6 +12,7 @@ import i18next from 'i18next';
 
 //Metricas
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
 
 //Archivos json para los idiomas
 import global_es from './componentes/translate/es-latam/global.json';
@@ -40,6 +41,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <I18nextProvider i18n={i18next}>
         <App />
         <SpeedInsights />
+        <Analytics />
       </I18nextProvider>
     </NextUIProvider>
   </React.StrictMode>
