@@ -7,7 +7,8 @@ Aquí encontrarás una muestra de mi trabajo y pasión por el desarrollo web. Ex
 
 **Client:** React, React-dom, Nextui-org, TailwindCSS, Tailwindcss-animated, Emailjs, I18next
 
-**Idiomas Del Sitio Web:** Español, English, Francés
+## **Idiomas Del Sitio Web:** 
+Español, English, Francés
 
 ## 🔗 Redes Sociales
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://my-project-alpha-neon.vercel.app/)
