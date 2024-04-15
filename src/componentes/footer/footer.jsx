@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 export function Footer () {
 
   //Uso para el select de traducion
-  const [t, i18n] = useTranslation('global');
+  const [t] = useTranslation('global');
 
   const Indice = [
     { name: t("indexgrup.home"), key:'1', href: '/' },

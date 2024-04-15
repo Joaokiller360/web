@@ -7,16 +7,7 @@
     height: 0;
     width: 0; /* Ancho del scrollbar */
   }
-  /* Handle del scrollbar (la "manija") */
-  ::-webkit-scrollbar-thumb {
-    background-color: #888888; /* Color de la manija del scrollbar */
-    border-radius: 10px; /* Borde redondeado */
-  }
   
-  /* Cambia el color del handle del scrollbar al pasar el ratón sobre él */
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #16172B;
-  }
   html, body {
     font-size: 1.125rem;
     min-height: 5vh;

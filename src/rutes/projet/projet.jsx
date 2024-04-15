@@ -1,6 +1,6 @@
 import { React } from 'react';
 
-import { Icon1, Icon2, Icon3, Icon4, Icon5 } from './icons.jsx';
+import { Icon1, Icon2 } from './icons.jsx';
 
 import { useTranslation } from 'react-i18next';
 

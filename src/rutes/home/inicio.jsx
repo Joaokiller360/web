@@ -1,5 +1,4 @@
 import { React } from 'react';
-import './inicio.css';
 
 //Uso para las traducciones
 import { useTranslation } from 'react-i18next';
