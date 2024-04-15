@@ -3,7 +3,7 @@ import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDis
 
 export function Testimonio2(props) {
   //Parte de exportacion de la imagen
-  const imagen = `/src/rutes/projet/testImg/testi-${props.imagen}.svg`;
+  const imagen = `./src/rutes/projet/testImg/testi-${props.imagen}.svg`;
 
   const {isOpen, onOpen, onClose} = useDisclosure();
 
@@ -36,7 +36,7 @@ export function Testimonio2(props) {
               variant='flat' 
               color='foreground' 
               onPress={onOpen}
-              className='capitalize'
+              className='capitalize transition-all hover:font-medium'
             >
               Leer más
             </Button>
@@ -55,8 +55,8 @@ export function Testimonio2(props) {
       <ModalContent>
         {(onClose) => (
           <>
-            <ModalHeader className='flex flex-col gap-1'>Descripción</ModalHeader>
-            <ModalBody>
+            <ModalHeader className='flex flex-col gap-1 text-black'>Descripción</ModalHeader>
+            <ModalBody className='text-black'>
               <p> 
                 Soy <b>{props.nombre}</b>, tengo <b>{props.años} años</b> y soy de {props.pais} 
               </p>

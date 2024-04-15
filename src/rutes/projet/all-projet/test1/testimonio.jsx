@@ -2,7 +2,7 @@ import { React } from 'react';
 import {Tooltip, Image, Button} from '@nextui-org/react';
 
 export function Testimonio1(props) {
-  const imagen = `/src/rutes/projet/testImg/testi-${props.imagen}.svg`;
+  const imagen = `./src/rutes/projet/testImg/testi-${props.imagen}.svg`;
   const onClick1 = () => {
     alert(`Hola, soy ${props.nombre} tengo ${props.años} y vengo de ${props.pais}`);
   };
@@ -32,7 +32,7 @@ export function Testimonio1(props) {
               </div>
             }
           >
-            <Button color='foreground' variant='flat' className='capitalize' onClick={onClick1}>
+            <Button color='foreground' variant='flat' className='capitalize transition-all hover:font-medium' onClick={onClick1}>
               Leer más
             </Button>
           </Tooltip>
