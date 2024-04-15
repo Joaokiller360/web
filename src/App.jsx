@@ -46,8 +46,8 @@ export default function App() {
   ]
 
   const callsToAction = [
-    { name: 'Redes Sociales', href: '#redes-sociales', icon: REDES },
-    { name: 'Contact sales', href: '#contacto', icon: PhoneIcon },
+    { name: t("social.social-networking"), href: '#redes-sociales', icon: REDES },
+    { name: t("social.contact_sales"), href: '#contacto', icon: PhoneIcon },
   ]
 
   //Menu TailwindUi
@@ -95,11 +95,11 @@ export default function App() {
               leaveTo="opacity-0 translate-y-1"
             >
               <Popover.Panel className="absolute -left-28 top-full z-10 mt-3 w-80 max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
-                <div className="p-4">
+                <div className="p-2">
                   {proyectos.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-300"
+                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-5 hover:bg-gray-300"
                     >
                       <div className="flex-auto">
                         <a href={item.href} className="block font-semibold text-gray-900">

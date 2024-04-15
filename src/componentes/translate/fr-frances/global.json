@@ -16,12 +16,6 @@
     "button-c": "Contact"
   },
 
-  "language": "Langue",
-  "social": {
-    "social-networking": "Réseau social",
-    "description": "Suivez-moi sur les médias sociaux pour les dernières vidéos et les articles les plus intéressants."
-  },
-
   "projects": "Mis Proyectos",
 
   "project1": {
@@ -59,9 +53,16 @@
   },
 
   "faqs": "formulaire de contact",
+  
+  "language": "Langue",
+  "social": {
+    "social-networking": "Réseau social",
+    "contact_sales": "Contact vente",
+    "description": "Suivez-moi sur les médias sociaux pour les dernières vidéos et les articles les plus intéressants."
+  },
 
-  "contact-area": "Area de contacto",
-  "contact-meensage": "Me puedes dejar tu informacion para poder comunicarme con tigo 📧",
+  "contact-area": "Zone de contact",
+  "contact-meensage": "Pouvez-vous me laisser vos coordonnées afin que je puisse vous contacter ? 📧",
   "contact-from": {
     "name": "Nom complet",
     "last-name": "Nom de famille complet",
