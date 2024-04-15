@@ -5,7 +5,7 @@ Aquí encontrarás una muestra de mi trabajo y pasión por el desarrollo web. Ex
 
 ### Tecnologias Implementadas
 
-**Client:** React, React-dom, Nextui-org, TailwindCSS, Tailwindcss-animated, Emailjs, I18next
+**Tecnologias:** React, React-dom, Nextui-org, TailwindCSS, Tailwindcss-animated, Emailjs, I18next
 
 ### **Idiomas Del Sitio Web:** 
 Español, English, Francés
