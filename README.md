@@ -7,6 +7,8 @@ Aquí encontrarás una muestra de mi trabajo y pasión por el desarrollo web. Ex
 
 **Client:** React, React-dom, Nextui-org, TailwindCSS, Tailwindcss-animated, Emailjs, I18next
 
+**Idiomas:** Español, English, Francés
+
 ## Autor
 
 - [@Joaokiller360](https://www.github.com/Joaokiller360)
