@@ -9,7 +9,7 @@ export const ContactArea = () => {
       </ul>
       <ul className='text-base text-white items-start justify-start pb-2'>
         <li>Teléfonos:</li>
-        <a href='cell:0986660737'>098-666-0737</a>
+        <a className='cursor-default'>098-666-0737</a>
       </ul>
       <div className='pb-2'>
         <a className='text-white'>Redes:</a>
