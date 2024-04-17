@@ -2,13 +2,12 @@ export const Skills = () => {
 
     const HobbiesArea = [
       { key: '1', texto: 'Archivador' },
-      { key: '2', texto: 'Atención al cliente'},
-      { key: '3', texto: 'Aprendizaje y adaptación rápido'},
-      { key: '4', texto: 'Digitador' },
-      { key: '5', texto: 'Modelado de páginas web' },
-      { key: '6', texto: 'Servicio al cliente' },
-      { key: '7', texto: 'Servicio de Chofer Profecional' },
-      { key: '8', texto: 'Programador Aficionado' },
+      { key: '2', texto: 'Aprendizaje y adaptación rápido'},
+      { key: '3', texto: 'Digitador' },
+      { key: '4', texto: 'Modelado de páginas web' },
+      { key: '5', texto: 'Servicio al cliente' },
+      { key: '6', texto: 'Servicio de Chofer Profecional' },
+      { key: '7', texto: 'Programador Aficionado' },
     ]
   
     return (<div className='pb-3'>

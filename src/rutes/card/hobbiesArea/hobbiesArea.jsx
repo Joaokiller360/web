@@ -4,7 +4,7 @@ export const HobbiesArea = () => {
     { key: '1', texto: 'Música' },
     { key: '2', texto: 'Tecnologia' },
     { key: '3', texto: 'Fotografia' },
-    { key: '4', texto: 'Programación' },
+    { key: '4', texto: 'Programador Aficionado' },
   ]
 
   return (<div className='pb-3'>
