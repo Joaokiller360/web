@@ -11,7 +11,7 @@ export function Testimonio2(props) {
   return (
     <>
     <div id={`testimonio-${props.id}`} className='container mx-auto flex md:px-10 px-2 py-6 m-10 md:flex-row flex-col items-center rounded-lg border border-gray-100 bg-gray-800 text-white'>
-      <div className="md:w-1/4 w-2/4 md:mb-0 mb-10">
+      <div className='md:w-1/4 w-2/4 md:mb-0 mb-10'>
         <Image
           isZoomed
           alt={props.nombre}
