@@ -8,7 +8,7 @@ export const ProfessionalFormation = () => {
     <p className='leading-relaxed mb-3 text-white text-center'>Formación Profecional</p>
       <ul className='text-base text-white'>
         {ProfessionalFormation.map((item) => (
-          <li className='cursor-default py-1 transition delay-75 rounded-xl hover:bg-gray-700' key={item.key}>
+          <li className='hover:underline cursor-default py-1 transition delay-75 rounded-xl hover:bg-gray-700' key={item.key}>
             {item.texto}
           </li>
         ))}

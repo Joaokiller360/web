@@ -14,7 +14,7 @@ export const Skills = () => {
      <p className='leading-relaxed mb-3 text-white text-center'>Habilidades:</p>
         <ul className='text-base text-white'>
           {HobbiesArea.map((item) => (
-            <li className='cursor-default px-5 transition delay-75 rounded-xl hover:bg-gray-700' key={item.key}>
+            <li className='cursor-default transition delay-75 rounded-xl px-5 hover:underline hover:bg-gray-700' key={item.key}>
               {item.texto}
             </li>
           ))}

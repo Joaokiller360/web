@@ -14,6 +14,9 @@ import { Proyectos } from './rutes/projet/projet.jsx';
 import { Contact } from './rutes/contact/contact.jsx';
 import { Card } from './rutes/card/card.jsx';
 
+//Sonas de pruebas
+import { Demos } from './rutes/demos/demos.jsx';
+
 //Componente
 import { Error404 } from './componentes/error404/error404.jsx';
 import { Footer } from './componentes/footer/footer.jsx';
@@ -269,6 +272,7 @@ export default function App() {
             <Route path='/testimonio2' element={<CampoTestimonio2 />} />
             <Route path='/#contacto' element={<Navigate to='/#contacto' />} />
             <Route path='/card' element={<Card />} />
+            <Route path='/demos' element={<Demos />} />
             <Route path='/contacto' element={<Contact />} />
             <Route path='/proyectos' element={<Proyectos />} />
             <Route path='*' element={<Error404 />} />

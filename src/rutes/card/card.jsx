@@ -52,13 +52,13 @@ export function Card () {
                 </div>
               </div>
                 <div className='sm:w-2/3 sm:pl-4 sm:py-8 mt-4 pt-4 sm:mt-0 sm:text-left rounded-r-3xl bg-gray-900'>
-                  <div>
+                  <div className='pr-10 text-justify'>
                     <p className='leading-relaxed mb-4 text-white text-medium'>Soy un chico <strong>Esmeraldeño</strong>, que le gusta aprender cosas nuevas sobre el mundo de la Programación.</p>
-                    <p className='leading-relaxed mb-4 text-white text-medium'>He trabajado en varios campos tantos tecnicos, como operar practicas de descargar de vehiculos.</p>
-                    <h2 className='leading-relaxed mb-4 text-white text-2xl text-center'>Mi Experencia Laboral</h2>
+                    <p className='leading-relaxed mb-4 text-white text-medium'>He trabajado en varios campos tantos tecnicos, como operar practicas de descargar de vehiculos, asistente legal, archivador, etc</p>
+                  </div>
+                  <h2 className='leading-relaxed mb-4 text-white text-2xl text-center'>Mi Experencia Laboral</h2>
                     <div>
                       <TimelineComponent/>
-                    </div>
                     </div>
                   </div>
               </div>
@@ -87,7 +87,10 @@ export function Card () {
                 </div>
               </div>
               <div className='sm:w-2/3 sm:pl-4 sm:py-8 mt-4 sm:mt-0 text-center sm:text-left rounded-3xl md:rounded-r-3xl bg-gray-900'>
-                <p className='leading-relaxed text-lg mb-4 text-white md:pt-0 pt-6 px-5'>Soy un chico <strong>Esmeraldeño</strong>, que le gusta aprender cosas nuevas sobre el mundo de la Programación.</p>
+                <div className='px-5 pt-6 text-justify'>
+                  <p className='leading-relaxed mb-4 text-white text-medium'>Soy un chico <strong>Esmeraldeño</strong>, que le gusta aprender cosas nuevas sobre el mundo de la Programación.</p>
+                  <p className='leading-relaxed mb-4 text-white text-medium'>He trabajado en varios campos tantos tecnicos, como operar practicas de descargar de vehiculos, asistente legal, archivador, etc</p>
+                </div>
                 <h2 className='leading-relaxed mb-4 text-white text-xl text-center'>Mi Experencia Laboral</h2>
                 <div className='px-10'>
                   <TimelineComponent/>
