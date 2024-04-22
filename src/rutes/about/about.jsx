@@ -11,33 +11,33 @@ export function About () {
   return (<>
     <section className='grid text-center pt-0 md:pt-14'>
       <div className='max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-10 text-center animate-fade-right'>
-        <div className="mr-auto place-self-center lg:col-span-7">
-          <h1 className='max-w mb-4 md:text-5xl text-4xl font-extrabold text-white'>{t("navbar.about-me")}</h1>
-          <p className='max-w-2xl mb-6 font-light pt-0 md:pt-10 lg:mb-6 md:text-lg lg:text-xl text-white'>{t("about-message")}</p>
+        <div className='mr-auto place-self-center lg:col-span-7'>
+          <h1 className='max-w mb-4 md:text-5xl text-4xl font-extrabold text-white'>{t('navbar.about-me')}</h1>
+          <p className='max-w-2xl mb-6 font-light pt-0 md:pt-10 lg:mb-6 md:text-lg lg:text-xl text-white'>{t('about-message')}</p>
         </div>
-        <div className="mr-auto place-self-center lg:col-span-7">
-          <p className='max-w-2xl mb-6 font-light pt-0 md:pt-10 lg:mb-6 md:text-lg lg:text-xl text-white'>{t("coming-soon")}....</p>
+        <div className='mr-auto place-self-center lg:col-span-7'>
+          <p className='max-w-2xl mb-6 font-light pt-0 md:pt-10 lg:mb-6 md:text-lg lg:text-xl text-white'>{t('coming-soon')}....</p>
           <a href='/' className='group relative inline-flex items-center overflow-hidden px-8 py-3 mr-3 text-base font-medium text-center text-white'>
             <span className='absolute -end-full transition-all group-hover:end-4'>
               <svg className='size-5' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
                 <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M7 16l-4-4m0 0l4-4m-4 4h18' />
               </svg>
             </span>
-            <span className='transition-all group-hover:me-4'>{t("navbar.home")}</span>
+            <span className='transition-all group-hover:me-4'>{t('navbar.home')}</span>
           </a>
         </div>
       </div>
     </section>
     {/*<section className='text-white py-4 lg:py-10 mx-auto max-w-screen-xl px-4 animate-fade-right'>
       <div>
-        <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+        <ul className='timeline timeline-snap-icon max-md:timeline-compact timeline-vertical'>
           <li>
-            <div className="timeline-middle">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+            <div className='timeline-middle'>
+              <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className='h-5 w-5'><path fillRule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z' clipRule='evenodd' /></svg>
             </div>
-            <div className="timeline-start md:text-end mb-6">
-              <time className="font-mono italic">12 De Marzo 2020</time>
-              <div className="text-lg font-black">Inicios en el mundo de los tutoriales</div>
+            <div className='timeline-start md:text-end mb-6'>
+              <time className='font-mono italic'>12 De Marzo 2020</time>
+              <div className='text-lg font-black'>Inicios en el mundo de los tutoriales</div>
               Todo inicio por querer hacer un keylogger para Windows 10 porqué en ese tiempo me estafaron y queria hacerle lo mismo pero la curiosidad me gano a seguir investigando sobre el mundo de la programacion, donde comenze a investigar sobre las <strong>Aplicaciones Web</strong>.
             </div>
             <hr/>
@@ -45,12 +45,12 @@ export function About () {
 
           <li>
             <hr />
-            <div className="timeline-middle">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+            <div className='timeline-middle'>
+              <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className='h-5 w-5'><path fillRule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z' clipRule='evenodd' /></svg>
             </div>
-            <div className="timeline-end mb-10">
-              <time className="font-mono italic">1998</time>
-              <div className="text-lg font-black">iMac</div>
+            <div className='timeline-end mb-10'>
+              <time className='font-mono italic'>1998</time>
+              <div className='text-lg font-black'>iMac</div>
               iMac is a family of all-in-one Mac desktop computers designed and built by Apple Inc. It has been the primary part of Apple's consumer desktop offerings since its debut in August 1998, and has evolved through seven distinct forms
             </div>
             <hr />
@@ -58,12 +58,12 @@ export function About () {
 
           <li>
             <hr />
-            <div className="timeline-middle">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+            <div className='timeline-middle'>
+              <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className='h-5 w-5'><path fillRule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z' clipRule='evenodd' /></svg>
             </div>
-            <div className="timeline-start md:text-end mb-10">
-              <time className="font-mono italic">2001</time>
-              <div className="text-lg font-black">iPod</div>
+            <div className='timeline-start md:text-end mb-10'>
+              <time className='font-mono italic'>2001</time>
+              <div className='text-lg font-black'>iPod</div>
               The iPod is a discontinued series of portable media players and multi-purpose mobile devices designed and marketed by Apple Inc. The first version was released on October 23, 2001, about 8+1⁄2 months after the Macintosh version of iTunes was released. Apple sold an estimated 450 million iPod products as of 2022. Apple discontinued the iPod product line on May 10, 2022. At over 20 years, the iPod brand is the oldest to be discontinued by Apple
             </div>
             <hr />
@@ -71,12 +71,12 @@ export function About () {
 
           <li>
             <hr />
-              <div className="timeline-middle">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+              <div className='timeline-middle'>
+                <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className='h-5 w-5'><path fillRule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z' clipRule='evenodd' /></svg>
               </div>
-              <div className="timeline-end mb-10">
-                <time className="font-mono italic">2007</time>
-                <div className="text-lg font-black">iPhone</div>
+              <div className='timeline-end mb-10'>
+                <time className='font-mono italic'>2007</time>
+                <div className='text-lg font-black'>iPhone</div>
                 iPhone is a line of smartphones produced by Apple Inc. that use Apple's own iOS mobile operating system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on January 9, 2007. Since then, Apple has annually released new iPhone models and iOS updates. As of November 1, 2018, more than 2.2 billion iPhones had been sold. As of 2022, the iPhone accounts for 15.6% of global smartphone market share
               </div>
             <hr />
@@ -84,12 +84,12 @@ export function About () {
 
           <li>
             <hr />
-              <div className="timeline-middle">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+              <div className='timeline-middle'>
+                <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className='h-5 w-5'><path fillRule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z' clipRule='evenodd' /></svg>
               </div>
-              <div className="timeline-start md:text-end mb-10">
-                <time className="font-mono italic">2015</time>
-                <div className="text-lg font-black">Apple Watch</div>
+              <div className='timeline-start md:text-end mb-10'>
+                <time className='font-mono italic'>2015</time>
+                <div className='text-lg font-black'>Apple Watch</div>
                 The Apple Watch is a line of smartwatches produced by Apple Inc. It incorporates fitness tracking, health-oriented capabilities, and wireless telecommunication, and integrates with iOS and other Apple products and services
               </div>
           </li>

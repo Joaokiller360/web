@@ -69,6 +69,8 @@
     "mail": "Email",
     "phone": "Phone Number",
     "message": "Message",
+    "mail-sent": "Mail sent successfully! :)",
+    "error-sent": "Error sending the email :(",
     "message-area": "Ej: You can write your message here",
     "button": "Send"
   },

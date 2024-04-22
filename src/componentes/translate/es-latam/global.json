@@ -68,6 +68,8 @@
     "mail": "Correo Electronico",
     "phone": "Teléfono",
     "message": "Mensaje",
+    "mail-sent": "¡Correo enviado correctamente! :)",
+    "error-sent": "Error al enviar el correo :(",
     "message-area": "Ej: Aqui puedes escribir tu mensaje",
     "button": "Enviar"
   },

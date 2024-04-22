@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 
 import emailjs from '@emailjs/browser';
 
@@ -9,8 +9,11 @@ export function Contact () {
 
   //Uso para el select de traducion
   const [t] = useTranslation('global');
+  
+  const [message, setMessage] = useState(''); // Estado para almacenar el mensaje de éxito o error
+  const [showMessage, setShowMessage] = useState(false); // Estado para controlar la visibilidad del mensaje
 
-  const form = useRef ();
+  const form = useRef (null);
 
   const sendEmail = async (evento) => {
     evento.preventDefault();
@@ -21,17 +24,34 @@ export function Contact () {
   
       await emailjs.sendForm(serviceId, templateId, form.current);
   
-      console.log('Correo enviado correctamente');
+      //console.log('Correo enviado correctamente');
+      setMessage(t("contact-from.mail-sent")); // Establece el mensaje de éxito
+      setShowMessage(true); // Muestra el mensaje
+      form.current.reset(); // Resetea el formulario después de enviar el correo
     } catch (error) {
-      console.error('Error al enviar el correo:', error);
+      //console.error('Error al enviar el correo:', error);
+      setMessage(t("contact-from.error-sent")); // Establece el mensaje de error
+      setShowMessage(true); // Muestra el mensaje
     }
   };
+
+  // Efecto para ocultar el mensaje después de 4 segundos
+  useEffect(() => {
+    if (showMessage) {
+      const timer = setTimeout(() => {
+        setShowMessage(false); // Oculta el mensaje
+      }, 4000);
+
+      // Limpiar el temporizador al desmontar el componente
+      return () => clearTimeout(timer);
+    }
+  }, [showMessage]);
 
   emailjs.init('0biM3Cjhn5bwlSsZR');
   
   return (
   <>
-    <form ref={form} onSubmit={sendEmail} id='contacto' className='mx-auto max-w-screen-xl px-4 py-6 sm:px-6 sm:py-12 lg:px-8 lg:py-16 relative '>
+    <form ref={form} onSubmit={sendEmail} id='contacto' className='mx-auto max-w-screen-xl px-4 py-6 sm:px-6 sm:py-12 lg:px-8 lg:py-16 relative'>
       <div className='container mx-auto max-w-screen-xl'>
       <div className='flex flex-col text-center w-full mb-12'>
         <h1 className='text-3xl md:text-4xl font-extraboldfont-extrabold font-medium mb-4 text-white'>{t("contact-area")}</h1>
@@ -73,14 +93,14 @@ export function Contact () {
             <button className='flex mx-auto items-center justify-center px-5 py-3 text-base transition font-medium text-center text-white hover:text-gray-800 border border-gray-300 rounded-lg hover:bg-gray-100'>
               {t("contact-from.button")}
             </button>
+            {showMessage && <div className='text-center text-green-500 pt-6'>{message}</div>} {/* Muestra el mensaje de éxito o error */}
           </div>
           <div className='p-2 w-full pt-8 mt-8 border-t border-white text-center'>
             <a href='mailto:joaobarres73@gmail.com' className='text-white hover:underline'>joaobarres73@gmail.com</a>
           </div>
         </div>
       </div>
-    </div>
-  </form>
-    
+      </div>
+    </form>
   </>)
 }

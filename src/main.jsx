@@ -1,11 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {NextUIProvider} from "@nextui-org/react";
-import Spline from '@splinetool/react-spline';
-
-import './index.css'
-
-import App from './App.jsx'
+import App from './App.jsx';
+import './index.css';
 
 //Funcionamiento del select de traduccion
 import { I18nextProvider } from 'react-i18next';
