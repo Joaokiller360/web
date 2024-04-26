@@ -9,6 +9,7 @@
   }
   
   html, body {
+    background-color: black;
     font-size: 1.125rem;
     min-height: 5vh;
   }
