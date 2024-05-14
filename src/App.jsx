@@ -42,6 +42,7 @@ export default function App() {
   const proyectos = [
     { name: t('project1.name-testimony'), description: t('project1.description-testimony'), href: '/testimonio1' },
     { name: t('project2.name-testimony'), description: t('project2.description-testimony'), href: '/testimonio2' },
+    { name: t('project3.name-testimony'), description: t('project3.description-testimony'), href: 'https://las-jack-burger.vercel.app/' },
   ]
 
   const language = [
