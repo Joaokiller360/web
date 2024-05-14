@@ -11,6 +11,7 @@ export function Proyectos () {
   const cardsEs = [
     { icon: 'icon1', href: '/testimonio1', title: t("project1.name-testimony"), description: t("project1.description-testimony-smoll") },
     { icon: 'icon1', href: '/testimonio2', title: t("project2.name-testimony"), description: t("project2.description-testimony-smoll") },
+    { icon: 'icon1', href: 'https://las-jack-burger.vercel.app/', title: t("project3.name-testimony"), description: t("project3.description-testimony-smoll") },
   ];
   const iconComponentsEs = {
     icon1: Icon1,
@@ -20,6 +21,7 @@ export function Proyectos () {
   const cardsMo = [
     { icon: 'icon1', href: '/testimonio1', title: t("project1.name-testimony"), description: t("project1.description-testimony-smoll") },
     { icon: 'icon1', href: '/testimonio2', title: t("project2.name-testimony"), description: t("project2.description-testimony-smoll") },
+    { icon: 'icon1', href: 'https://las-jack-burger.vercel.app/', title: t("project3.name-testimony"), description: t("project3.description-testimony-smoll") },
   ];
   const iconComponentsMo = {
     icon1: Icon1,
