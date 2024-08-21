@@ -4,7 +4,6 @@ export const TimelineComponent = () => {
 
   const timelineComponent = [
     { time: '2016 – 2017', title: 'Cyber “Chiriboga”', texto: 'Atención Al Cliente - Cajero - Digitador', key: '1' },
-    { time: '2017 – 2019', title: 'Cyber “Chat.net”', texto: 'Atención Al Cliente - Cajero - Digitador', key: '2' },
     { time: '2021 - 2022', title: 'Cargoport Cia ltda', texto: 'Servicio de Chofer Profesional en Agencia Naviera', key: '3' },
     { time: '2021 - 2022', title: 'Zanders', texto: 'Servicio de Chofer Profesional en Agencia Naviera', key: '4' },
     { time: '2019 – 2024', title: 'Ab. Ricardo Barre Palacio Ramon', texto: 'Secretario Legal', key: '5' },
